@@ -14,8 +14,8 @@ import pubhub.utilities.DAOUtilities;
 public class BookTagDAOImpl implements BookTagDAO{
 	
 	
-	Connection connection = null;	// Our connection to the database
-	PreparedStatement stmt = null;	// We use prepared statements to help protect against SQL injection
+	private Connection connection = null;	// Our connection to the database
+	private PreparedStatement stmt = null;	// We use prepared statements to help protect against SQL injection
 
 	
 	public List<Book> getBookByTag(String tag) {
